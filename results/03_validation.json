@@ -1,0 +1,206 @@
+{
+  "n_folds": 12,
+  "folds": [
+    {
+      "fold": "Fold 1",
+      "train_end": "2016-05-31",
+      "valid_start": "2016-07-01",
+      "valid_end": "2016-12-31",
+      "n_valid_days": 184
+    },
+    {
+      "fold": "Fold 2",
+      "train_end": "2016-12-01",
+      "valid_start": "2017-01-01",
+      "valid_end": "2017-06-30",
+      "n_valid_days": 181
+    },
+    {
+      "fold": "Fold 3",
+      "train_end": "2017-05-31",
+      "valid_start": "2017-07-01",
+      "valid_end": "2017-12-31",
+      "n_valid_days": 184
+    },
+    {
+      "fold": "Fold 4",
+      "train_end": "2017-12-01",
+      "valid_start": "2018-01-01",
+      "valid_end": "2018-06-30",
+      "n_valid_days": 181
+    },
+    {
+      "fold": "Fold 5",
+      "train_end": "2018-05-31",
+      "valid_start": "2018-07-01",
+      "valid_end": "2018-12-31",
+      "n_valid_days": 184
+    },
+    {
+      "fold": "Fold 6",
+      "train_end": "2018-12-01",
+      "valid_start": "2019-01-01",
+      "valid_end": "2019-06-30",
+      "n_valid_days": 181
+    },
+    {
+      "fold": "Fold 7",
+      "train_end": "2019-05-31",
+      "valid_start": "2019-07-01",
+      "valid_end": "2019-12-31",
+      "n_valid_days": 184
+    },
+    {
+      "fold": "Fold 8",
+      "train_end": "2019-12-01",
+      "valid_start": "2020-01-01",
+      "valid_end": "2020-06-30",
+      "n_valid_days": 182
+    },
+    {
+      "fold": "Fold 9",
+      "train_end": "2020-05-31",
+      "valid_start": "2020-07-01",
+      "valid_end": "2020-12-31",
+      "n_valid_days": 184
+    },
+    {
+      "fold": "Fold 10",
+      "train_end": "2020-12-01",
+      "valid_start": "2021-01-01",
+      "valid_end": "2021-06-30",
+      "n_valid_days": 181
+    },
+    {
+      "fold": "Fold 11",
+      "train_end": "2021-05-31",
+      "valid_start": "2021-07-01",
+      "valid_end": "2021-12-31",
+      "n_valid_days": 184
+    },
+    {
+      "fold": "Fold 12",
+      "train_end": "2021-12-01",
+      "valid_start": "2022-01-01",
+      "valid_end": "2022-06-30",
+      "n_valid_days": 181
+    }
+  ],
+  "ranking_mean_wape": {
+    "XGBoost": {
+      "mean": 0.266088,
+      "std": 0.117647,
+      "min": 0.164783,
+      "max": 0.542478
+    },
+    "GradientBoosting": {
+      "mean": 0.270739,
+      "std": 0.119101,
+      "min": 0.171452,
+      "max": 0.547997
+    },
+    "RandomForest": {
+      "mean": 0.273088,
+      "std": 0.115524,
+      "min": 0.172953,
+      "max": 0.515139
+    },
+    "LightGBM": {
+      "mean": 0.27544,
+      "std": 0.125,
+      "min": 0.171982,
+      "max": 0.577124
+    },
+    "DecisionTree": {
+      "mean": 0.334749,
+      "std": 0.142007,
+      "min": 0.205059,
+      "max": 0.645386
+    }
+  },
+  "dm_test": [
+    {
+      "model_1": "XGBoost",
+      "model_2": "GradientBoosting",
+      "DM_stat": -1.14714455027554,
+      "p_value": 0.25144719117833647,
+      "có ý nghĩa (p<0.05)": false,
+      "tốt hơn": "không phân biệt được"
+    },
+    {
+      "model_1": "XGBoost",
+      "model_2": "RandomForest",
+      "DM_stat": -1.6281673336561504,
+      "p_value": 0.10363324766876536,
+      "có ý nghĩa (p<0.05)": false,
+      "tốt hơn": "không phân biệt được"
+    },
+    {
+      "model_1": "XGBoost",
+      "model_2": "LightGBM",
+      "DM_stat": -2.445622972506328,
+      "p_value": 0.014538447127179666,
+      "có ý nghĩa (p<0.05)": true,
+      "tốt hơn": "XGBoost"
+    },
+    {
+      "model_1": "XGBoost",
+      "model_2": "DecisionTree",
+      "DM_stat": -9.093058622412812,
+      "p_value": 0.0,
+      "có ý nghĩa (p<0.05)": true,
+      "tốt hơn": "XGBoost"
+    },
+    {
+      "model_1": "GradientBoosting",
+      "model_2": "RandomForest",
+      "DM_stat": -0.08737991615866457,
+      "p_value": 0.9303775214448873,
+      "có ý nghĩa (p<0.05)": false,
+      "tốt hơn": "không phân biệt được"
+    },
+    {
+      "model_1": "GradientBoosting",
+      "model_2": "LightGBM",
+      "DM_stat": -0.8815306718417213,
+      "p_value": 0.37812739789315275,
+      "có ý nghĩa (p<0.05)": false,
+      "tốt hơn": "không phân biệt được"
+    },
+    {
+      "model_1": "GradientBoosting",
+      "model_2": "DecisionTree",
+      "DM_stat": -6.8253782905601454,
+      "p_value": 1.131339466553527e-11,
+      "có ý nghĩa (p<0.05)": true,
+      "tốt hơn": "GradientBoosting"
+    },
+    {
+      "model_1": "RandomForest",
+      "model_2": "LightGBM",
+      "DM_stat": -0.5846442896089092,
+      "p_value": 0.5588471438110463,
+      "có ý nghĩa (p<0.05)": false,
+      "tốt hơn": "không phân biệt được"
+    },
+    {
+      "model_1": "RandomForest",
+      "model_2": "DecisionTree",
+      "DM_stat": -8.129614599039424,
+      "p_value": 6.661338147750939e-16,
+      "có ý nghĩa (p<0.05)": true,
+      "tốt hơn": "RandomForest"
+    },
+    {
+      "model_1": "LightGBM",
+      "model_2": "DecisionTree",
+      "DM_stat": -6.844981119661441,
+      "p_value": 9.895639863088945e-12,
+      "có ý nghĩa (p<0.05)": true,
+      "tốt hơn": "LightGBM"
+    }
+  ],
+  "best_model": "XGBoost",
+  "n_significant_pairs": 5,
+  "n_total_pairs": 10
+}
