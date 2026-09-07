@@ -1,0 +1,135 @@
+{
+  "reproduced_test_wape_matches": true,
+  "segment_wape": {
+    "theo_thang": {
+      "2022-07": {
+        "n_days": 31,
+        "WAPE": 0.154363,
+        "bias": -0.010298
+      },
+      "2022-08": {
+        "n_days": 31,
+        "WAPE": 0.224239,
+        "bias": -0.194958
+      },
+      "2022-09": {
+        "n_days": 30,
+        "WAPE": 0.211214,
+        "bias": -0.107226
+      },
+      "2022-10": {
+        "n_days": 31,
+        "WAPE": 0.19595,
+        "bias": -0.111072
+      },
+      "2022-11": {
+        "n_days": 30,
+        "WAPE": 0.234931,
+        "bias": -0.087732
+      },
+      "2022-12": {
+        "n_days": 31,
+        "WAPE": 0.213655,
+        "bias": -0.183672
+      }
+    },
+    "theo_khuyen_mai": {
+      "0": {
+        "n_days": 86,
+        "WAPE": 0.207262,
+        "bias": -0.115288
+      },
+      "1": {
+        "n_days": 98,
+        "WAPE": 0.198773,
+        "bias": -0.114787
+      }
+    },
+    "theo_phan_vi_doanh_thu": {
+      "Q1 thấp nhất": {
+        "n_days": 37,
+        "WAPE": 0.220371,
+        "bias": 0.124442
+      },
+      "Q2": {
+        "n_days": 37,
+        "WAPE": 0.192629,
+        "bias": -0.056236
+      },
+      "Q3": {
+        "n_days": 36,
+        "WAPE": 0.135071,
+        "bias": -0.087746
+      },
+      "Q4": {
+        "n_days": 37,
+        "WAPE": 0.219772,
+        "bias": -0.11811
+      },
+      "Q5 cao nhất": {
+        "n_days": 37,
+        "WAPE": 0.225857,
+        "bias": -0.218634
+      }
+    },
+    "theo_thu_trong_tuan": {
+      "0": {
+        "n_days": 26,
+        "WAPE": 0.256742,
+        "bias": -0.2081
+      },
+      "1": {
+        "n_days": 26,
+        "WAPE": 0.176875,
+        "bias": -0.079972
+      },
+      "2": {
+        "n_days": 26,
+        "WAPE": 0.197981,
+        "bias": -0.083605
+      },
+      "3": {
+        "n_days": 26,
+        "WAPE": 0.188999,
+        "bias": -0.174006
+      },
+      "4": {
+        "n_days": 27,
+        "WAPE": 0.170195,
+        "bias": -0.042547
+      },
+      "5": {
+        "n_days": 27,
+        "WAPE": 0.221312,
+        "bias": -0.038731
+      },
+      "6": {
+        "n_days": 26,
+        "WAPE": 0.204276,
+        "bias": -0.147653
+      }
+    }
+  },
+  "worst_day": {
+    "date": "2022-11-09",
+    "actual": 845358.47,
+    "predicted": 1637786.491129364,
+    "err_pct": 93.73869775379005
+  },
+  "retrain_backtest": {
+    "strategy_a_single_fit": {
+      "WAPE": 0.19245854509992993,
+      "bias": -0.08470608908932072
+    },
+    "strategy_b_monthly_retrain": {
+      "WAPE": 0.1931813906373554,
+      "bias": -0.09307439876079435
+    },
+    "bias_reduced": false,
+    "wape_reduced": false
+  },
+  "feasibility": {
+    "multi_series_forecasting": "không khả thi trực tiếp — sales.csv chỉ có tổng doanh thu, không có SKU/cửa hàng/ngành hàng",
+    "external_data": "không khả thi trực tiếp — không có tệp thời tiết/giá đối thủ trong bộ dữ liệu"
+  }
+}
