@@ -1,0 +1,198 @@
+{
+  "test_evaluation": {
+    "LightGBM": {
+      "WAPE": 0.20308,
+      "bias": -0.115041,
+      "R2": 0.646137,
+      "vs_baseline_gốc_%": 30.948585
+    },
+    "LightGBM (tài liệu gốc)": {
+      "WAPE": 0.2038,
+      "bias": -0.1181,
+      "R2": 0.6398,
+      "vs_baseline_gốc_%": 30.703842
+    },
+    "Ensemble": {
+      "WAPE": 0.210908,
+      "bias": -0.135768,
+      "R2": 0.62241,
+      "vs_baseline_gốc_%": 28.28708
+    },
+    "RandomForest": {
+      "WAPE": 0.214356,
+      "bias": -0.102341,
+      "R2": 0.599993,
+      "vs_baseline_gốc_%": 27.114726
+    },
+    "GradientBoosting": {
+      "WAPE": 0.220469,
+      "bias": -0.170408,
+      "R2": 0.592067,
+      "vs_baseline_gốc_%": 25.036181
+    },
+    "XGBoost": {
+      "WAPE": 0.222256,
+      "bias": -0.154483,
+      "R2": 0.577053,
+      "vs_baseline_gốc_%": 24.428437
+    }
+  },
+  "upgraded_best_strategy": "LightGBM",
+  "gain_vs_original_pct": 0.3531839675260495,
+  "explained_model": "LightGBM",
+  "additivity_error": 4.973799150320701e-14,
+  "spearman_shap_vs_gain": 0.8088294573300707,
+  "group_shap": {
+    "lịch sử doanh thu": {
+      "n_columns": 24,
+      "total": 0.6846692974806523,
+      "share_pct": 71.8451886499737,
+      "mean_per_column": 0.02852788739502718
+    },
+    "lịch": {
+      "n_columns": 19,
+      "total": 0.2011887984993699,
+      "share_pct": 21.111574939370254,
+      "mean_per_column": 0.010588884131545784
+    },
+    "Tết và ngày đặc biệt": {
+      "n_columns": 4,
+      "total": 0.013862235269835774,
+      "share_pct": 1.454621832374211,
+      "mean_per_column": 0.0034655588174589435
+    },
+    "khuyến mãi (gốc)": {
+      "n_columns": 6,
+      "total": 0.03036971016023636,
+      "share_pct": 3.186819627717952,
+      "mean_per_column": 0.005061618360039394
+    },
+    "khuyến mãi mở rộng": {
+      "n_columns": 9,
+      "total": 0.022888592714353843,
+      "share_pct": 2.401794950563903,
+      "mean_per_column": 0.002543176968261538
+    }
+  },
+  "top_interaction_pairs": [
+    {
+      "feature_1": "roll_mean_7",
+      "feature_2": "lag364_smooth7",
+      "mean_abs_interaction": 0.019636858681907537
+    },
+    {
+      "feature_1": "lag_91",
+      "feature_2": "lag364_smooth7",
+      "mean_abs_interaction": 0.017094146475379872
+    },
+    {
+      "feature_1": "lag_364",
+      "feature_2": "roll_mean_7",
+      "mean_abs_interaction": 0.007887267363734374
+    },
+    {
+      "feature_1": "lag_364",
+      "feature_2": "lag364_smooth7",
+      "mean_abs_interaction": 0.007658418085046538
+    },
+    {
+      "feature_1": "lag364_smooth7",
+      "feature_2": "fourier_sin2",
+      "mean_abs_interaction": 0.006450012987560566
+    },
+    {
+      "feature_1": "lag364_smooth7",
+      "feature_2": "fourier_sin1",
+      "mean_abs_interaction": 0.004681968517854937
+    },
+    {
+      "feature_1": "lag_28",
+      "feature_2": "lag364_smooth7",
+      "mean_abs_interaction": 0.004364116374739462
+    },
+    {
+      "feature_1": "lag364_smooth7",
+      "feature_2": "fourier_sin4",
+      "mean_abs_interaction": 0.003863771356274014
+    },
+    {
+      "feature_1": "lag364_smooth7",
+      "feature_2": "dom",
+      "mean_abs_interaction": 0.003552625517287393
+    },
+    {
+      "feature_1": "lag_35",
+      "feature_2": "lag_364",
+      "mean_abs_interaction": 0.0034422599335222027
+    },
+    {
+      "feature_1": "lag_28",
+      "feature_2": "lag_364",
+      "mean_abs_interaction": 0.003405516932160383
+    },
+    {
+      "feature_1": "lag_35",
+      "feature_2": "lag364_smooth7",
+      "mean_abs_interaction": 0.003050184693598002
+    }
+  ],
+  "local_explanations": {
+    "Ngày mẫu tài liệu gốc": {
+      "date": "2022-08-29",
+      "actual": 7928796.83,
+      "predicted": 5526644.291810469,
+      "push_up_top5": {
+        "dom_reverse": 0.11573802508672204,
+        "lag_91": 0.11532450143206562,
+        "fourier_sin2": 0.09069544427095022,
+        "fourier_cos3": 0.05254074952698776,
+        "lag_28": 0.043658894698487244
+      },
+      "pull_down_top5": {
+        "roll_mean_364": -0.04383449693636024,
+        "trend_28_91": -0.023208950597908614,
+        "lag364_smooth7": -0.022518552618810785,
+        "fourier_sin1": -0.02060987874805147,
+        "lag_364": -0.015254118458882256
+      }
+    },
+    "Dự báo tốt nhất": {
+      "date": "2022-10-22",
+      "actual": 2407124.47,
+      "predicted": 2401584.3911491893,
+      "push_up_top5": {
+        "lag_91": 0.026608437635204294,
+        "lag_182": 0.015620963377581334,
+        "roll_min_91": 0.015041231032793694,
+        "promo_days_left": 0.01329396563259935,
+        "promo_disc_max": 0.012505586269623696
+      },
+      "pull_down_top5": {
+        "lag364_smooth7": -0.1917319370046575,
+        "roll_mean_7": -0.05830943265711689,
+        "lag_364": -0.05777294900565876,
+        "roll_mean_364": -0.04637440720019008,
+        "fourier_sin1": -0.032657863476087325
+      }
+    },
+    "Dự báo tệ nhất": {
+      "date": "2022-11-09",
+      "actual": 845358.47,
+      "predicted": 1637786.491129364,
+      "push_up_top5": {
+        "roll_std_7": 0.02804969189028523,
+        "dow": 0.02370917429299223,
+        "promo_days_left": 0.015415593438994013,
+        "lag_91": 0.01136359631694602,
+        "promo_disc_max": 0.011146388542976098
+      },
+      "pull_down_top5": {
+        "lag364_smooth7": -0.34666484786864565,
+        "lag_364": -0.11648983369484117,
+        "roll_mean_7": -0.10848835642107468,
+        "roll_mean_364": -0.06038568936921887,
+        "fourier_sin2": -0.032305083660045045
+      }
+    }
+  }
+}
