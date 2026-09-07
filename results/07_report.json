@@ -1,0 +1,22 @@
+{
+  "phases": {
+    "1_deep_eda": "results/01_deep_eda.json",
+    "2_features": "results/02_features.json",
+    "3_validation": "results/03_validation.json",
+    "4_modeling": "results/04_modeling.json",
+    "5_explain": "results/05_explain.json",
+    "6_robustness": "results/06_robustness.json"
+  },
+  "headline": {
+    "n_features_final": 62,
+    "n_cv_folds": 12,
+    "best_tree_model": "LightGBM",
+    "ensemble_helps": true,
+    "test_wape_original": 0.2038,
+    "test_wape_upgraded": 0.20308,
+    "gain_vs_original_pct": 0.3531839675260495,
+    "retrain_bias_reduced": false,
+    "quantile_coverage_pct": 53.03867403314917
+  },
+  "report_path": "reports/bao_cao_tong_hop.md"
+}
