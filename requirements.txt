@@ -1,0 +1,21 @@
+# Core pipeline (Giai đoạn 1-2, dùng ngay từ đầu)
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+xgboost
+shap
+matplotlib
+jupyter
+notebook
+
+# Giai đoạn 1: EDA nâng cao (STL, changepoint detection)
+statsmodels
+ruptures
+
+# Giai đoạn 3-4 (tuning, baseline thống kê, dự báo khoảng) - cài khi tới giai đoạn đó
+optuna
+
+# Giai đoạn 7 (dashboard demo, tuỳ chọn)
+streamlit
